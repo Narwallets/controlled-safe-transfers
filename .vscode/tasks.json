@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "bash scripts/build.sh",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "build",
+			"label": "bash scripts/build.sh"
+		},
+		{
+			"type": "shell",
+			"command": "bash scripts/test.sh",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "test",
+			"label": "integration test"
+		}
+	]
+}
