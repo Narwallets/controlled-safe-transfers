@@ -11,7 +11,7 @@ echo $1 will receive $2 mpDAO
 echo $1 must be registered as a safe destination
 
 set -ex
-echo NEAR_ENV=mainnet near call $MPDAO_TOKEN_ADDRESS \
+NEAR_ENV=mainnet near call $MPDAO_TOKEN_ADDRESS \
     storage_deposit '{"account_id":"'$1'"}' \
     --accountId operator.meta-pool.near \
     --deposit 0.00125
